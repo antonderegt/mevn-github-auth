@@ -4,7 +4,8 @@ MEVN means it contains MongoDB, ExpressJS, VueJS and NodeJS
 it is based on vue cli (webpack-simple template).
 Mongoose runs on top of MongoDB. [How to install MongoDB on Windows](https://www.youtube.com/watch?v=1uFY60CESlM&t=605s)
 
-[MEVN Boilerplate with out GitHub Auth (PassportJS)](https://github.com/antonderegt/mevn-boilerplate)
+It uses PassportJS to authenticate a user with GitHub.
+[MEVN Boilerplate without PassportJS](https://github.com/antonderegt/mevn-boilerplate)
 
 ## How to start
 
