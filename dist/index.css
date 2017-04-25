@@ -1,0 +1,10 @@
+.btn-github {
+  border: 0;
+  border-radius: 7px;
+  background: #444;
+  color: white;
+}
+.btn-github:hover {
+  background: #2B2B2B;
+  color: white;
+}

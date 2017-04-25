@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <router-link to="/">Home</router-link> |
-    <router-link to="/counter">Counter</router-link>
+    <router-link to="/counter">Counter</router-link> |
+    <a v-if="this.$store.state.user.displayName" href="/logout" @click="signOut">Log Out</a>
+    <router-link v-else to="/signin">Sign In</router-link>
     <h1>{{msg}}</h1>
-    <hr />
-    <h5>Router View</h5>
     <hr />
     <router-view />
   </div>
@@ -15,8 +15,16 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome'
+      msg: 'MEVN Boilerplate'
     }
+  },
+  methods: {
+    signOut() {
+      this.$store.dispatch('signOut')
+    }
+  },
+  mounted() {
+    this.$store.dispatch('getUser')
   }
 }
 </script>
@@ -39,11 +47,11 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
+/*
 li {
   display: inline-block;
   margin: 0 10px;
-}
+}*/
 
 a {
   color: #42b983;

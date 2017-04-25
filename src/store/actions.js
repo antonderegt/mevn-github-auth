@@ -1,4 +1,16 @@
 import * as types from './mutation-types'
+import axios from 'axios'
+
+export const getUser = ({commit}) => {
+  axios.get('/isauth')
+  .then(function (response) {
+    console.log('got user data: ', response.data);
+    commit(types.GET_USER, response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
 
 export const getCount = ({commit}) => {
   fetch(`/api/count`, {
@@ -21,10 +33,6 @@ export const incCount = ({commit}, count_payload) => {
   .then(json => commit(types.INC_COUNT, json))
 }
 
-export const api = ({commit}) => {
-  fetch(`/api/joke`, {
-    method: 'GET'
-  })
-  .then(response => response.json())
-  .then(json => commit(types.API, json))
+export const signOut = ({commit}) => {
+  commit(types.SIGN_OUT)
 }
