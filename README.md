@@ -10,6 +10,9 @@ It uses PassportJS to authenticate a user with GitHub.
 ## How to start
 
 ``` bash
+# clone the repo
+git clone https://github.com/antonderegt/mevn-github-auth.git
+
 # install dependencies
 npm install
 
