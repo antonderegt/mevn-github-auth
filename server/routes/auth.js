@@ -1,6 +1,6 @@
-var express = require('express')
-var router = express.Router()
-var passport = require('passport')
+const express = require('express'),
+      router = express.Router(),
+      passport = require('passport')
 
 router.get('/github',
   passport.authenticate('github'))
