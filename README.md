@@ -23,7 +23,7 @@ After that execute the following:
 
 ``` bash
 # clone the repo
-git clone https://github.com/antonderegt/mevn-boilerplate.git
+git clone https://github.com/antonderegt/mevn-github-auth.git
 
 # install dependencies
 npm install
