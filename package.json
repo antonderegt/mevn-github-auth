@@ -2,8 +2,7 @@
   "name": "mevn-boilerplate",
   "description": "A MEVN Biolerplate project (Mongo, Express, Vue, Node)",
   "version": "0.0.1",
-  "author": "Anton de Regt <antonderegt@gmail.com>",
-  "private": true,
+  "author": "Anton de Regt <ditisanton@gmail.com>",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
