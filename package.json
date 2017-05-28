@@ -1,7 +1,7 @@
 {
   "name": "mevn-boilerplate",
   "description": "A MEVN Biolerplate project (Mongo, Express, Vue, Node)",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Anton de Regt <antonderegt@gmail.com>",
   "private": true,
   "scripts": {
